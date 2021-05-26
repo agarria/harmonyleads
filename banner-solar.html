@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="index, follow">
+    <base target="_top">
+    <meta name="autor" content="Alex García">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Banner</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+        html,
+        body {
+            font-family: 'DM Sans', sans-serif;
+            position: relative;
+            display: block;
+            float: left;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        main {
+            position: relative;
+            display: block;
+            float: left;
+            width: 100%;
+            height: auto;
+            padding: 10%;
+            margin: 0;
+            background: #eee;
+        }
+
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .banner {
+            position: relative;
+            display: block;
+            width: 900px;
+            height: 563px;
+            padding: 0;
+            margin: 0 auto 4% auto;
+            z-index: 1;
+            background-attachment: scroll !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .banner:last-child {
+            margin: 0 auto 0 auto;
+        }
+
+        .option-1 {
+            background: url("solar-1.png");
+        }
+
+        .option-2 {
+            background: url("solar-2.png");
+        }
+
+        .option-3 {
+            background: url("solar-3.png");
+        }
+
+        .option-3 .logo {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            bottom: 40px;
+            left: 40px;
+            width: auto;
+            height: 80px;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -2px;
+            text-decoration: none;
+        }
+
+        .option-3 .text {
+            position: absolute;
+            display: block;
+            top: 40px;
+            left: 40px;
+            width: auto;
+            height: auto;
+            line-height: 60px;
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: capitalize;
+            letter-spacing: -3px;
+            word-spacing: -3px;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+        }
+
+        .solar {
+            position: relative;
+            display: block;
+        }
+
+        .option-3 .action {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;;
+            bottom: 40px;
+            right: 40px;
+            width: auto;
+            height: auto;
+        }
+
+        .option-3 .address {
+            position: relative;
+            display: block;
+            width: 300px;
+            height: auto;
+            line-height: 1;
+            margin: 0 20px 0 0;
+            line-height: 1;
+            font-size: 22px;
+            font-weight: 500;
+            color: #fff;
+            text-align: right;
+        }
+
+        .option-3 .button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 80px;
+            line-height: 1;
+            padding: 0 30px;
+            margin: 0;
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+            background: #ed1d26;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .option-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            position: relative;
+            display: block;
+            float: left;
+            width: auto;
+            height: auto;
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .option-2 .text {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+            float: left;
+            line-height: 60px;
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: capitalize;
+            text-align: center;
+            letter-spacing: -3px;
+            word-spacing: -3px;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+        }
+
+        .option-2 .address {
+            display: block;
+            width: auto;
+            float: left;
+            padding: 5px 10px;
+            margin: 20px 0 0 0;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+        }
+
+        .option-2 .logo {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            width: 100%;
+            height: 80px;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -2px;
+            text-decoration: none;
+        }
+
+
+        .option-2 .button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 80px;
+            line-height: 1;
+            padding: 0 30px;
+            margin: 0 auto;
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+            background: #ed1d26;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="banner option-2">
+            <div class="container">
+                <span class="text">Alex,<span class="solar">solar report</span>ready!</span>
+
+                <div class="box">
+                    <span class="address">602 Baldwing 340 ave Newmark Hills, CA</span>        
+                </div>
+                <a class="button">Get Started</a>
+                <span class="logo">SolarSavings™</span>
+            </div>
+        </div>
+        <div class="banner option-3">
+            <span class="logo">SolarSavings™</span>
+            <span class="text">Alex,<span class="solar">solar report</span>ready!</span>
+            <div class="action">
+                <span class="address">602 Baldwing 340 ave Newmark Hills, CA</span>        
+                <a class="button">Get Started</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
